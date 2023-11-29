@@ -11,6 +11,7 @@ func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/form", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("START REQUEST")
+		fmt.Printf("Method %v\n", r.Method)
 		body, err := io.ReadAll(r.Body)
 		if err != nil {
 			http.Error(w, "beb", http.StatusBadRequest)
