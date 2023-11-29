@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"io"
-	"log":w http.ResponseWriter, r *http.Request
+	"log"
 	"net/http"
 )
 
